@@ -6,18 +6,23 @@ def main():
     def uwuficador(letra):
         uwutxt = letra
         if letra == " ":
-            filler = [" :3 "," ♥ "," ✌ "," ᵘʷᵘ "] 
+            filler = [" :3 "," ♥ "," ✌ "," ᵘʷᵘ "," UwU "," Uwu "," uwU "," ÚwÚ "," uwu "," ☆w☆ "," ✧w✧ "," ♥w♥ "," uw ︠u "," (uwu) "]
+            fillerfrases = [" **se sonroja** "," **muerde el cojin** "," **sonrie** "," **ʕ •ᴥ•ʔ** "] 
             if prob(25):
                 n = random.randint(0, len(filler)-1)
                 uwutxt = filler[n] 
+            elif prob(10):
+                n = random.randint(0, len(fillerfrases)-1)
+                uwutxt = fillerfrases[n] 
         else:
             alfabeto = {
                 "a": "u",
-            #    "h": "w",
+                "h": "",
                 "g": "w",
                 "y": "i",
                 "o": "owo",
-                "r": "gr",
+                "r": "g",
+                ".": "ღ"
             }
             uwutxt = alfabeto.get(letra, letra)
         return uwutxt
